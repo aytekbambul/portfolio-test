@@ -487,6 +487,11 @@
       padding: calc(var(--spacing) * 4);
     }
   }
+  .max-lg\:pt-24 {
+    @media (width < 64rem) {
+      padding-top: calc(var(--spacing) * 24);
+    }
+  }
   .max-lg\:text-xl {
     @media (width < 64rem) {
       font-size: var(--text-xl);
