@@ -429,6 +429,11 @@
       margin-top: calc(var(--spacing) * 16);
     }
   }
+  .max-lg\:mt-20 {
+    @media (width < 64rem) {
+      margin-top: calc(var(--spacing) * 20);
+    }
+  }
   .max-lg\:h-full {
     @media (width < 64rem) {
       height: 100%;
