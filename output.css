@@ -180,21 +180,11 @@
   }
 }
 @layer utilities {
-  .relative {
-    position: relative;
-  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
   .flex {
     display: flex;
-  }
-  .table {
-    display: table;
-  }
-  .size-5 {
-    width: calc(var(--spacing) * 5);
-    height: calc(var(--spacing) * 5);
   }
   .size-5\/6 {
     width: calc(5/6 * 100%);
@@ -203,10 +193,6 @@
   .size-\[clamp\(1\.2rem\,3vw\,2\.2rem\)\] {
     width: clamp(1.2rem, 3vw, 2.2rem);
     height: clamp(1.2rem, 3vw, 2.2rem);
-  }
-  .size-\[clamp\(4rem\,7vw\,6rem\)\] {
-    width: clamp(4rem, 7vw, 6rem);
-    height: clamp(4rem, 7vw, 6rem);
   }
   .size-full {
     width: 100%;
@@ -220,9 +206,6 @@
   }
   .min-h-\[600px\] {
     min-height: 600px;
-  }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
   }
   .w-3\/4 {
     width: calc(3/4 * 100%);
@@ -245,14 +228,8 @@
   .flex-\[4\] {
     flex: 4;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -289,10 +266,6 @@
   .rounded-b-full {
     border-bottom-right-radius: calc(infinity * 1px);
     border-bottom-left-radius: calc(infinity * 1px);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
@@ -370,23 +343,13 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .shadow-2xl {
     --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .drop-shadow-2xl {
     --tw-drop-shadow-size: drop-shadow(0 25px 25px var(--tw-drop-shadow-color, rgb(0 0 0 / 0.15)));
     --tw-drop-shadow: drop-shadow(var(--drop-shadow-2xl));
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
-  .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .transition-all {
@@ -423,12 +386,6 @@
     @media (width < 64rem) {
       width: clamp(0.5rem, 4vw, 3rem);
       height: clamp(0.5rem, 4vw, 3rem);
-    }
-  }
-  .max-lg\:size-\[clamp\(2rem\,5vw\,4rem\)\] {
-    @media (width < 64rem) {
-      width: clamp(2rem, 5vw, 4rem);
-      height: clamp(2rem, 5vw, 4rem);
     }
   }
   .max-lg\:size-\[clamp\(3rem\,5vw\,4rem\)\] {
@@ -539,18 +496,6 @@
     @media (width >= 64rem) {
       width: clamp(3rem, 6vw, 6rem);
       height: clamp(3rem, 6vw, 6rem);
-    }
-  }
-  .lg\:size-\[clamp\(3rem\,7vw\,6rem\)\] {
-    @media (width >= 64rem) {
-      width: clamp(3rem, 7vw, 6rem);
-      height: clamp(3rem, 7vw, 6rem);
-    }
-  }
-  .lg\:size-\[clamp\(4rem\,7vw\,6rem\)\] {
-    @media (width >= 64rem) {
-      width: clamp(4rem, 7vw, 6rem);
-      height: clamp(4rem, 7vw, 6rem);
     }
   }
   .lg\:h-\[50\%\] {
@@ -718,11 +663,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -812,7 +752,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
