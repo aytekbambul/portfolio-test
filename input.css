@@ -1,4 +1,26 @@
 @import "tailwindcss";
 @theme{
     --font-boldonse:"Boldonse", system-ui;
+    --font-basker:"Libre Baskerville", serif;
+    --font-prompt:"Prompt", sans-serif;
+    --font-redhat:"Red Hat Display", sans-serif;
+    --font-smooch:"Smooch Sans", sans-serif;
+    --font-bebas:"Bebas Neue", sans-serif;
+    --font-barlow:"Barlow Condensed", sans-serif;
+
+    --color-keylime:#d1d871;
+    --color-mellow:#F9DD80;
+    --color-powblue:#b2cee2;
+    --color-cloud:#E3EBF2;
+    --color-socialblue:#3A5A88;
+    --color-dutchwhite:#EFDFBB;
+    --color-wine:#722F37;
+    --color-apple:#9F5255;
+    --color-richburg:#7f001f;
+    --color-mauve:#c79A99;
+    --color-maroon:#3B0A0A;
+    --color-gold:#F2BB05;
+    --color-port:#FFA732;
+    --color-pearl:#EAE0C8;
+    --color-paynegrey:#536878;
 }
